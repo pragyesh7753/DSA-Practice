@@ -15,7 +15,6 @@ for i in range(4):
 ***
 ****
 *****
-
 num = int(input("Enter a number: "))
 def pattern(num):
     for i in range(num + 1):
@@ -24,4 +23,35 @@ def pattern(num):
         print()
         
 pattern(num)
+'''
+
+'''
+1
+12
+123
+1234
+12345
+def pattern(num):
+    for i in range(num + 1):
+        for j in range(i):
+            print(j ,end="")
+        print()
+        
+pattern(6)
+'''
+
+'''
+1
+22
+333
+4444
+55555
+
+def pattern(num):
+    for i in range(num + 1):
+        for j in range(i):
+            print(i, end="")
+        print()
+
+pattern(6)
 '''
