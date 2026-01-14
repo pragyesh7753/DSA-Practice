@@ -114,3 +114,23 @@ def pattern(num):
                     print("*", end = "")
                 print()
 '''
+
+'''
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+
+def pattern(num):
+    for i in range(1, 2 * num):
+        if i <= num:
+            stars = i
+        else:
+            stars = 2 * num - i
+        print("*" * stars) 
+'''
