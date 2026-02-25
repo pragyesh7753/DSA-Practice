@@ -134,3 +134,8 @@ def pattern(num):
             stars = 2 * num - i
         print("*" * stars) 
 '''
+
+
+
+
+# pattern(5)
