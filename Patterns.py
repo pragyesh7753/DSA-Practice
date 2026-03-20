@@ -187,5 +187,32 @@ def pattern(num):
         print()
  """
 
+"""
+Pattern 12
+1                    1
+12               21
+123          321
+1234     4321
+1234554321
+def pattern(num):
+    space = 2 * (num - 1)
+    for i in range(1, num + 1):
+        # left numbers
+        for j in range(1, i + 1):
+            print(j, end="")
 
-pattern(6)
+        # spaces
+        for j in range(space):
+            print(" ", end="")
+
+        # right numbers
+        for j in range(i, 0, -1):
+            print(j, end="")
+
+        print()
+        space -= 2
+"""
+
+
+# number
+pattern(5)
