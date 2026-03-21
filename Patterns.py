@@ -92,10 +92,10 @@ def pattern(num):
 
 """
 Pattern 7
-    *
-   ***
-  *****
- *******
+        *
+      ***
+    *****
+  *******
 *********
 def pattern(num):
     for i in range(1, num + 1):
@@ -168,7 +168,7 @@ def pattern(num):
 """
 
 """
-Pattern 10
+Pattern 11
 1
 01
 101
@@ -212,6 +212,158 @@ def pattern(num):
         print()
         space -= 2
 """
+
+"""
+Pattern 13
+1 
+2 3
+4 5 6
+7 8 9 10
+11 12 13 14 15
+
+def pattern(num):
+    n = 1
+    for i in range(1, num + 1):
+        for j in range(1, i + 1):
+            print(n, end=" ")
+            n = n + 1
+        print()
+"""
+
+"""
+Pattern 14
+A 
+A B
+A B C
+A B C D
+A B C D E
+
+def pattern(num):
+    for i in range(num):
+        for j in range(i + 1):
+            print(chr(65 + j), end=" ")
+        print()
+"""
+
+"""
+Pattern 15
+A B C D E 
+A B C D
+A B C
+A B
+A
+
+def pattern(num):
+    for i in range(num):
+        for i in range(num - i ):
+            print(chr(65 + i), end=" ")
+        print()
+"""
+"""
+Pattern 16
+A 
+B B
+C C C
+D D D D
+E E E E E
+
+def pattern(num):
+    for i in range(num):
+        for j in range(i + 1):
+            print(chr(65 + i), end=" ")
+        print()
+"""
+
+
+"""
+Pattern 17
+            A 
+         A B A
+      A B C B A
+   A B C D C B A
+A B C D E D C B A
+
+def pattern(num):
+    for i in range(1, num + 1):
+        # spaces
+        for j in range(num - i):
+            print(" ", end=" ")
+
+        # increasing characters
+        for j in range(i):
+            print(chr(65 + j), end=" ")
+
+        # decreasing characters
+        for j in range(i - 2, -1, -1):
+            print(chr(65 + j), end=" ")
+
+        print()
+"""
+
+"""
+Pattern 18
+E 
+D E
+C D E
+B C D E
+A B C D E 
+
+def pattern(num):
+    for i in range(num):
+        for j in range(num - i - 1, num):
+            print(chr(65 + j), end=" ")
+        print()
+"""
+
+"""
+Pattern 19
+**********
+****    ****
+***        ***
+**            **
+*                *
+*                *
+**            **
+***        ***
+****    ****
+**********
+
+def pattern(num):
+    spaces = 0
+    for i in range(num):
+        # stars
+        for j in range(num - i):
+            print("*", end="")
+        # spaces
+        for j in range(spaces):
+            print(" ", end="")
+
+        # stars
+        for j in range(num - i):
+            print("*", end="")
+
+        spaces += 2
+        print()
+
+    spaces = 2 * num - 2
+    for i in range(num):
+        # stars
+        for j in range(i + 1):
+            print("*", end="")
+        # spaces
+        for j in range(spaces):
+            print(" ", end="")
+        # stars
+        for j in range(i + 1):
+            print("*", end="")
+
+        spaces -= 2
+        print()
+"""
+
+'''
+Pattern 20
+'''
 
 
 # number
