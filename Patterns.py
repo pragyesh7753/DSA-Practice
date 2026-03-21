@@ -361,10 +361,88 @@ def pattern(num):
         print()
 """
 
-'''
+"""
 Pattern 20
-'''
+*                *
+**            **
+***        ***
+****    ****
+**********
+****    ****
+***        ***
+**            **
+*                *
+
+def pattern(num):
+    for i in range(1, num + 1):
+        # left stars
+        for j in range(i):
+            print("*", end="")
+
+        # spaces
+        for j in range(2 * (num - i)):
+            print(" ", end="")
+
+        # right stars
+        for j in range(i):
+            print("*", end="")
+        print()
+
+    # lower part
+    for i in range(num - 1, 0, -1):
+        # left stars
+        for j in range(i):
+            print("*", end="")
+
+        # spaces
+        for j in range(2 * (num - i)):
+            print(" ", end="")
+
+        # right stars
+        for j in range(i):
+            print("*", end="")
+        print()
+"""
+
+"""
+Pattern 21
+*****
+*      *
+*      *
+*      *
+*****
+
+def pattern(num):
+    for i in range(num):
+        for j in range(num):
+            if i == 0 or j == 0 or i == num - 1 or j == num - 1:
+                print("*", end="")
+            else:
+                print(" ", end="")
+        print()
+"""
+
+"""
+Pattern 22
+4 4 4 4 4 4 4 
+4 3 3 3 3 3 4
+4 3 2 2 2 3 4
+4 3 2 1 2 3 4
+4 3 2 2 2 3 4
+4 3 3 3 3 3 4
+4 4 4 4 4 4 4
+
+def pattern(num):
+    for i in range(2 * num - 1):
+        for j in range(2 * num - 1):
+            top = i
+            left = j
+            right = (2 * num - 2) - j
+            bottom = (2 * num - 2) - i
+            print(num - min(top, left, right, bottom), end=" ")
+        print()
+"""
 
 
-# number
-pattern(5)
+
+# pattern(4)
