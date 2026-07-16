@@ -9,11 +9,27 @@
 
 # Print name n times
 
-def print_name(i, n):
-    if i>n:
-        return
-    print("Pragyesh")
-    print_name(i+1, n)
+# def print_name(i, n):
+#     if i>n:
+#         return
+#     print("Pragyesh")
+#     print_name(i+1, n)
+
+# print_name(1, 5)
 
 
-print_name(1, 5)
+# def count(i, n):
+#     if i < n:
+#         return
+#     count(i - 1, n)
+#     print(i)
+
+
+# def count(i, n):
+#     if i > n:
+#         return
+#     count(i + 1, n)
+#     print(i)
+
+# count(1, 5)
+
